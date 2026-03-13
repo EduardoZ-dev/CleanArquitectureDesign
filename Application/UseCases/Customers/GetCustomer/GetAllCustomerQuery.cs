@@ -1,7 +1,6 @@
 ﻿using Application.Base;
 using Application.Dtos;
 using Domain.Base.Interfaces;
-using Domain.Contracts.Persistence;
 using Domain.Entities;
 using MediatR;
 using Microsoft.EntityFrameworkCore;

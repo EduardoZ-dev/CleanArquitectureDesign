@@ -9,7 +9,7 @@ builder.Services.AddControllers();
 builder.Services.AddApplication(); // ✅ MediatR
 builder.Services.AddInfrastructure(builder.Configuration); // ✅ EF + repos
 
-// ✅ Api Versioning + ApiExplorer (encadenado al builder)
+// ✅ Api Versioning + ApiExplorer (encadenado al builder) 
 builder.Services
     .AddApiVersioning(options =>
     {
@@ -36,7 +36,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 app.Run();
